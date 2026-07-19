@@ -1,0 +1,127 @@
+*{
+    border: none;
+    margin: none;
+}
+
+html, body
+{ 
+  font-family: Calibri, sans-serif; 
+  margin:0;
+  height: 100%;
+}
+
+.contenedorEditor {
+  display: flex;
+  height: 100vh;
+}
+
+.section 
+{ 
+  border:1px solid #ccc; 
+  padding:10px; 
+  margin-bottom:10px; 
+  border-radius:8px; 
+}
+        
+.toolbar 
+{ 
+  margin-bottom:15px; 
+}
+        
+.btn 
+{ 
+  padding:8px 12px; 
+  background:#0078D4; 
+  color:white; 
+  border:none; 
+  border-radius:5px; 
+  cursor:pointer; 
+}
+
+.oculto
+{
+  display: none;
+}
+
+.contenedorEditor{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.editor {
+  width: 50%;
+  overflow-y: auto;
+}
+
+.contenedorEditor .editor{
+    flex: 1;
+}
+.contenedorEditor .preview{
+    flex: 1;
+}
+
+.preview-controller{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.preview{
+  border-left: 2px solid #ccc;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.preview iframe {
+  flex: 1;
+  width: 100%;
+  border: none;
+}
+
+
+#css_general {
+    color: black !important;
+    background: white !important;
+}
+
+textarea{
+  border: 2px solid #ccc;
+}
+
+
+.tab-btn {
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.tab-btn.active {
+    background: #0078D4;
+    color: white;
+    border-color: #0078D4;
+}
+
+
+.collapsible {
+    position: relative;
+    z-index: 2;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    pointer-events: none;
+}
+
+.content.open {
+    pointer-events: auto;
+}
